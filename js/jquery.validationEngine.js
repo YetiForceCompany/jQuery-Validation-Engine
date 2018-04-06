@@ -142,8 +142,6 @@
 		                else if (options.onFieldFailure && options.InvalidFields.length > 0) {
 		                    options.onFieldFailure();
 		                }
-
-		                return !valid;
 			}
 			if(options.onValidationComplete) {
 				// !! ensures that an undefined return is interpreted as return false but allows a onValidationComplete() to possibly return true and have form continue processing

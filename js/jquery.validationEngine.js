@@ -542,6 +542,8 @@
 				field.attr("id", "form-validation-field-" + $.validationEngine.fieldIdCounter);
 				++$.validationEngine.fieldIdCounter;
 			}
+			if ((!options.validateNonVisibleFields && (field.is(":hidden") && !options.prettySelect || field.parent().is(":hidden"))) || field.closest('.noValidate').length > 0)
+				return false;
 
 			if(field.hasClass(options.ignoreFieldsWithClass))
 				return false;

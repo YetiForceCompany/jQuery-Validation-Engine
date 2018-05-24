@@ -774,7 +774,7 @@
 				options.showArrow = options.showArrowOnRadioAndCheckbox;
 			}
 
-			if(field.is(":hidden") && options.prettySelect) {
+			if(field.is(":hidden") && options.prettySelect && !field.is('textarea')) {
 				field = form.find("#" + options.usePrefix + methods._jqSelector(field.attr('id')) + options.useSuffix);
 			}
 

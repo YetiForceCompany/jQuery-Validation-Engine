@@ -780,7 +780,6 @@
 				if (field.length <= 0) {
 					field = form.find("#" + jqSelector + options.useSuffix);
 				}
-				//field = form.find("#" + options.usePrefix + methods._jqSelector(field.attr('id')) + options.useSuffix);
 			}
 
 			if (options.isError && options.showPrompts){

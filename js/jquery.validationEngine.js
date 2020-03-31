@@ -349,7 +349,7 @@
 		*/
 		_validateFields: function(form) {
 			var options = form.data('jqv');
-
+			options.InvalidFields = [];
 			// this variable is set to true if an error is found
 			var errorFound = false;
 
